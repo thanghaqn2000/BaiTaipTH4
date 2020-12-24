@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <include
+        android:id="@+id/header"
+        layout="@layout/header" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header">
+        <RelativeLayout
+            android:background="#7E7E7C"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/sukien"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="#7A7A7A">
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sự kiện"
+                    android:textColor="#F4F4F4"
+                    android:textSize="30sp" />
+            </RelativeLayout>
+            <HorizontalScrollView
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/sukien"
+                android:id="@+id/luotngang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:background="#393938"
+                            android:id="@+id/relativesale"
+                            android:layout_marginLeft="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/imgsale"
+                                android:layout_width="200dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/sale" />
+
+                            <TextView
+                                android:id="@+id/textsale"
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/imgsale"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginStart="14dp"
+                                android:layout_marginLeft="14dp"
+                                android:layout_marginTop="14dp"
+                                android:gravity="center"
+                                android:text="Tuần này, The Coffee House thật háo hức để gửi tặng một nửa Thế giới xinh đẹp chương trình vô cùng ngọt ngào "
+                                android:textColor="#F8F5F5"
+                                android:textSize="20sp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/textsale"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginStart="61dp"
+                                android:layout_marginLeft="61dp"
+                                android:layout_marginTop="19dp"
+                                android:background="@drawable/button"
+                                android:text="Xem chi chiết"
+                                android:textColor="#FF9800" />
+                        </RelativeLayout>
+                    <RelativeLayout
+                        android:background="#393938"
+                        android:layout_toRightOf="@+id/relativesale"
+                        android:id="@+id/relativexmas"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/imgxmas"
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/sale" />
+
+                        <TextView
+                            android:gravity="center"
+                            android:id="@+id/textxmas"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/imgxmas"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginStart="21dp"
+                            android:layout_marginLeft="21dp"
+                            android:layout_marginTop="14dp"
+                            android:text="Tuần này, The Coffee House thật háo hức để gửi tặng một nửa Thế giới xinh đẹp chương trình vô cùng ngọt ngào "
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textxmas"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginTop="19dp"
+                            android:background="@drawable/button"
+                            android:text="Xem chi chiết"
+                            android:textColor="#FF9800" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:background="#393938"
+                        android:layout_toRightOf="@+id/relativexmas"
+                        android:id="@+id/relativefreesize"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/imgsize"
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/sale" />
+
+                        <TextView
+                            android:gravity="center"
+                            android:id="@+id/textsize"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/imgsize"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginStart="21dp"
+                            android:layout_marginLeft="21dp"
+                            android:layout_marginTop="14dp"
+                            android:text="Tuần này, The Coffee House thật háo hức để gửi tặng một nửa Thế giới xinh đẹp chương trình vô cùng ngọt ngào "
+
+                            android:textColor="#FFFDFD"
+                            android:textSize="20sp" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textsize"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginStart="68dp"
+                            android:layout_marginLeft="68dp"
+                            android:layout_marginTop="18dp"
+                            android:background="@drawable/button"
+                            android:text="Xem chi chiết"
+                            android:textColor="#FF9800" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </HorizontalScrollView>
+            <RelativeLayout
+                android:layout_below="@+id/luotngang"
+                android:id="@+id/tintuc"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="#7A7A7A">
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tin tức"
+                    android:textColor="#F4F4F4"
+                    android:textSize="30sp"/>
+            </RelativeLayout>
+            <HorizontalScrollView
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/tintuc"
+                android:id="@+id/luotngang1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <RelativeLayout
+                        android:background="#393938"
+                        android:id="@+id/relativesale1"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="250dp">
+                        <ImageView
+                            android:id="@+id/imgsale1"
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/sale" />
+
+                        <TextView
+                            android:id="@+id/textsale1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/imgsale1"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginStart="21dp"
+                            android:layout_marginLeft="21dp"
+                            android:layout_marginTop="14dp"
+                            android:text="Sự kiện nhận quà"
+                            android:textColor="#F8F5F5"
+                            android:textSize="20sp" />
+
+                        <Button
+                            android:textColor="#FF9800"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textsale1"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginStart="36dp"
+                            android:layout_marginLeft="36dp"
+                            android:layout_marginTop="24dp"
+                            android:background="@drawable/button"
+                            android:text="Xem chi chiết" />
+                    </RelativeLayout>
+                    <RelativeLayout
+
+                        android:background="#393938"
+                        android:layout_toRightOf="@+id/relativesale1"
+                        android:id="@+id/relativexmas1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="250dp">
+                        <ImageView
+                            android:id="@+id/imgxmas1"
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/sale" />
+
+                        <TextView
+                            android:id="@+id/textxmas1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/imgxmas1"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginStart="21dp"
+                            android:layout_marginLeft="21dp"
+                            android:layout_marginTop="14dp"
+                            android:text="Sự kiện nhận quà"
+                            android:textColor="#FDF8F8"
+                            android:textSize="20sp" />
+
+                        <Button
+                            android:textColor="#FF9800"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textxmas1"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginStart="36dp"
+                            android:layout_marginLeft="36dp"
+                            android:layout_marginTop="24dp"
+                            android:background="@drawable/button"
+                            android:text="Xem chi chiết" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:background="#393938"
+                        android:layout_toRightOf="@+id/relativexmas1"
+                        android:id="@+id/relativefreesize1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="250dp">
+                        <ImageView
+                            android:id="@+id/imgsize1"
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/sale" />
+                        <TextView
+                            android:id="@+id/textsize1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/imgsize1"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginStart="21dp"
+                            android:layout_marginLeft="21dp"
+                            android:layout_marginTop="14dp"
+                            android:text="Sự kiện nhận quà"
+                            android:textColor="#F8F0F0"
+                            android:textSize="20sp" />
+
+                        <Button
+                            android:textColor="#FF9800"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textsize1"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginStart="36dp"
+                            android:layout_marginLeft="36dp"
+                            android:layout_marginTop="24dp"
+                            android:background="@drawable/button"
+                            android:text="Xem chi chiết" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </HorizontalScrollView>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
